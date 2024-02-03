@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+html {
+	direction: rtl;
+	font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.884);
+    background-color: #242424;
+  
+  }
+  body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeandplace{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+  .timeanddat{
+    display: flex;
+    
+  }
+  .timeanddat h4:nth-child(2){
+        margin: 1.3rem 1rem 0;
+  }
+  hr {
+    border: 0.1px solid rgba(255, 255, 255, 0.027);
+    margin: 2rem 0;
+  }
+  .salat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .cells{
+    max-height: 350px;
+    margin: 0 7px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.829);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 200px;
+  }
+
+  .cells img{
+   width: 200px;
+   height: 100px;
+   object-fit: cover;
+
+  }
+  .cells h1{
+    margin: -1rem 0.9rem 0;
+    font-weight: 100;
+    font-size: 60px;
+  }
+  .cells h4{
+    margin: 0.9rem 0.9rem 0.9rem;
+  }
+  .city_name{
+   text-align: center;
+   margin: 5rem;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+  }
+
+
+  .container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+  }
+
+  input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+
+  .city-label {
+    position: absolute;
+    top: -12px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    background-color: #242424;
+    width: 35px;
+    left: 65%;
+  }
+  .locattiondiv,.searchdiv{
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+  }
+  .location,.searching{
+    z-index: 10;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(245, 245, 245);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:-10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    justify-content: center;
+  }
+  .location{
+    margin-right:10rem;
+  }
+  .city_name .location:hover ,.searching:hover{
+    background-color: #686868;
+  }
+  @media (max-width:1100px){
+    body{
+      overflow-y: scroll;
+    }
+    .timeandplace{
+      margin-top: 150px;
+      }
+    .salat {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .city_name{
+      gap: 10px;
+     }
+     .searchdiv{
+      margin-right: 2.5rem;
+     }
+
+  } 
+  @media (max-width:935px){
+    .searchdiv{
+      margin-right: 3.5rem;
+     }
+  }
+  @media (max-width:880px){
+    .salat {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    .timeandplace{
+      margin-top: 500px;
+      justify-items: center;
+      }
+      .city_name{
+        margin-right: 20px;
+       }
+       .searchdiv{
+        margin-right: 4.2rem;
+       }
+  }
+  @media (max-width:500px){
+    .timeandplace{
+      margin-top: 1050px;
+      grid-template-columns: repeat(1,1fr);
+      }
+    .salat {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+    .city_name{
+      text-align: center;
+      margin: 5rem;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+     }
+     .searchdiv{
+      margin-right: 0rem;
+     }
+     .searchdiv{
+      justify-content: end;
+    }
+    .location{
+      position: absolute;
+     margin-top: 8.9rem;
+     margin-left: 20rem;
+    }
+  }
+  @media (max-width:400px){
+    .timeandplace{
+      margin-top: 1110px;
+      }
+  }
+  @media (max-width:380px){
+    .timeandplace{
+      margin-top: 1300px;
+      }
+  }
