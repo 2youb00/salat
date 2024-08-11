@@ -3,6 +3,7 @@
 html {
 	direction: rtl;
 	font-family: "IBM Plex Sans Arabic", sans-serif !important;
+	    margin-top: 20px;
 }
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
